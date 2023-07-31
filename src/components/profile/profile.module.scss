@@ -1,0 +1,105 @@
+// profile.module.scss
+
+.profile-card {
+  width: 600px;
+  height: 285px;
+  background: radial-gradient(circle at top center, #004545, #00a5a5); /* Dark cyan gradient */
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.8);
+  display: flex;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.5s; /* Apply the opacity transition */
+}
+
+.profile-card:hover .profile-image {
+  opacity: 0; /* On hover, hide the first image */
+  cursor: pointer;
+  
+}
+
+.profile-image_two {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 20px; /* Add a margin to the right to avoid covering text */
+  z-index: 0; /* Lower z-index to be under the first image */
+  opacity: 0; /* Initially hide the second image */
+  transition: opacity 0.5s; /* Apply the opacity transition */
+}
+
+.profile-card:hover .profile-image_two {
+  opacity: 1; /* On hover, show the second image */
+  cursor: pointer;
+}
+
+.profile-content {
+  margin-left: 300px;
+  color: #f0f0f0;
+  flex: 1; /* Let the content take the available width */
+}
+
+h2 {
+  margin-bottom: 20px;
+  background-color: black;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold; /* Add font-weight to make the text more visible */
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.profession {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+
+.cv-button {
+  /* Add styles for the CV button */
+  button {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid white;
+    transition: background-color 0.2s;
+    margin-top: 30px;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+ .profile-image-box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+

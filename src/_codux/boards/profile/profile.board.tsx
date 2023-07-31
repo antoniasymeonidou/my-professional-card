@@ -1,9 +1,9 @@
 import { createBoard } from '@wixc3/react-board';
-import App from '../../../App';
+import  Profile  from '../../../components/profile/profile';
 
 export default createBoard({
-    name: 'App',
-    Board: () => <App />,
+    name: 'Profile',
+    Board: () => <Profile />,
     environmentProps: {
         canvasWidth: 642,
     },

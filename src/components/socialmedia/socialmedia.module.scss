@@ -1,0 +1,40 @@
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7; /* Set the initial opacity to 0.7 */
+  transition: opacity 0.2s, color 0.2s; /* Apply the opacity and color transition */
+
+  &:hover {
+    opacity: 1; /* On hover, set the opacity to 1 */
+  }
+
+  &.facebook {
+    color: #3b5998; /* Facebook blue color */
+    &:hover {
+      color: #4267b2; /* Facebook hover color */
+    }
+  }
+
+  &.twitter {
+    color: #1da1f2; /* Twitter blue color */
+    &:hover {
+      color: #00acee; /* Twitter hover color */
+    }
+  }
+
+  &.linkedin {
+    color: #0077b5; /* LinkedIn blue color */
+    &:hover {
+      color: #0e76a8; /* LinkedIn hover color */
+    }
+  }
+
+  /* Add more classes for other social media platforms and set their colors and hover colors as needed */
+}
